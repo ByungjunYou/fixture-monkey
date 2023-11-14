@@ -25,15 +25,15 @@ subprojects {
 
     ext {
         JUNIT_ENGINE_VERSION = "1.8.1"
-        JUNIT_JUPITER_VERSION = "5.8.1"
-        JQWIK_VERSION = "1.6.4"
+        JUNIT_JUPITER_VERSION = "5.8.2"
+        JQWIK_VERSION = "1.7.0"
     }
 
     dependencies {
         api("com.google.code.findbugs:jsr305:3.0.2")
         implementation("com.google.code.findbugs:findbugs-annotations:3.0.1")
         compileOnly("org.slf4j:slf4j-api:1.7.25")
-        testImplementation("ch.qos.logback:logback-classic:1.2.3")
+        testImplementation("ch.qos.logback:logback-classic:1.2.9")
     }
 
     tasks.withType(Javadoc).all { enabled = false }
